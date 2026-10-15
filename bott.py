@@ -117,7 +117,7 @@ async def start(m: Message, command: CommandObject, state: FSMContext):
             return await m.answer(
                 "✍️ Напиши анонимное сообщение — я передам его человеку.\n"
                 "Можно текст, фото, голосовое, стикер.\n\n"
-                "ℹ️ Владельцы премиума могут видеть отправителей.",
+                "и тд",
                 reply_markup=main_kb())
         if target == m.from_user.id:
             await m.answer("Это твоя собственная ссылка 🙂")
